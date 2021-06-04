@@ -1,0 +1,7 @@
+binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseAnalyticsBinary.json" == 8.1.0
+binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseCrashlyticsBinary.json" == 8.1.0
+binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseGoogleSignInBinary.json" == 8.1.0
+binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseMessagingBinary.json" == 8.1.0
+binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseMLModelDownloaderBinary.json" == 8.1.0
+binary "https://dl.google.com/dl/firebase/ios/carthage/FirebasePerformanceBinary.json" == 8.1.0
+binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseRemoteConfigBinary.json" == 8.1.0

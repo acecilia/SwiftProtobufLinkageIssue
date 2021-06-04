@@ -1,0 +1,32 @@
+name: Sample
+
+options:
+  bundleIdPrefix: com.acecilia
+  minimumXcodeGenVersion: 2.18.0
+
+targets:
+  App:
+    type: application
+    platform: iOS
+    deploymentTarget: "11.0"
+    sources: ["App"]
+    dependencies:
+      - target: Framework
+      # No idea why, but this is needed here
+      # See: https://github.com/firebase/firebase-ios-sdk/issues/4696#issue-551272265
+      - framework: FirebaseSwiftProtobuf/Carthage/Build/PromisesObjC.xcframework
+
+  Framework:
+    type: framework.static
+    platform: iOS
+    deploymentTarget: "11.0"
+    sources: ["Framework"]
+    dependencies:
+      - framework: FirebaseSwiftProtobuf/Carthage/Build/FirebaseMLModelDownloader.xcframework
+      - framework: FirebaseSwiftProtobuf/Carthage/Build/FirebaseCore.xcframework
+      - framework: FirebaseSwiftProtobuf/Carthage/Build/FirebaseInstallations.xcframework
+      - framework: FirebaseSwiftProtobuf/Carthage/Build/GoogleDataTransport.xcframework
+      - framework: FirebaseSwiftProtobuf/Carthage/Build/GoogleUtilities.xcframework
+      - framework: FirebaseSwiftProtobuf/Carthage/Build/PromisesObjC.xcframework
+
+      - framework: DynamicSwiftProtobuf/Carthage/Build/SwiftProtobuf.xcframework # toreplace
