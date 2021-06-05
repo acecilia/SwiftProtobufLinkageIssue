@@ -29,4 +29,4 @@ targets:
       - framework: FirebaseSwiftProtobuf/Carthage/Build/GoogleUtilities.xcframework
       - framework: FirebaseSwiftProtobuf/Carthage/Build/PromisesObjC.xcframework
 
-      - framework: DynamicSwiftProtobuf/Carthage/Build/SwiftProtobuf.xcframework # toreplace
+      - framework: StaticSwiftProtobuf/Carthage/Build/SwiftProtobuf.xcframework # toreplace
